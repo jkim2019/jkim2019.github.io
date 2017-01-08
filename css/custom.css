@@ -143,9 +143,8 @@ body {
         display: block;
         margin: 0 auto;
     }
-    #typing {
-        margin: 0;
-        text-align: center;
+    #about-header {
+        margin: 0 auto;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -170,8 +169,7 @@ body {
         display: block;
         margin: 0 auto;
     }
-    #typing {
-        margin: 0;
-        text-align: center;
+    #about-header {
+        margin: 0 auto;
     }
 }
