@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>John Kim</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!--Stylesheets-->
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Bootstrap Social CSS-->
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!--Hover-->
+    <link rel="stylesheet" href="css/hover-min.css">
+    <!--Custom CSS-->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--Scripts-->
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Typed JS-->
+    <script src="js/typed.js"></script>
+
+    <!--Typed JS Script-->
+    <script>
+        $(function(){
+            $(".element").typed({
+                strings: ["Programmer.", "Student.", "Developer."],
+                typeSpeed: 50,
+                backDelay: 1000,
+                startDelay: 1000,
+                loop: true
+            });
+        });
+    </script>
+    <!--Smooth Scrolling for Anchor Links-->
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+</script>
+</head>
+
+<body>
+    <div class="page-section" id="front-page">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center fade" id="intro">Hi, I'm John.</h1>
+            </div>
+        </div>
+        <div class="container">
+                <a href=#about-page><img src="images/arrow.png" alt="arrow" id="arrow"></a>
+        </div>
+    </div>
+
+    <div class="page-section" id="about-page">
+        <div class="container-fluid">
+            <!--typing-->
+            <div class="row">
+                <div class="col-xs-12" id="about-header">
+                    <div class="element" id="typing">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--profile picture-->
+            <div class="col-xs-4" id="profile-pic-section">
+                <img src="images/me.jpg" alt="profile-picture" id="profile-picture" class="img-rounded">
+            </div>
+
+            <!--about me-->
+            <div class="col-xs-6 col-xs-offset-2" id="about-me-section">
+                <p id="about-me">My name is John Kim, and I am a second-year at Vanderbilt University, where I am studying Computer Science and Mathematics. I began learning Java four years ago, and I have continued to acquire and home new skills in the field ever since. Currently, I am researching learning models for human cognition under the Vanderbilt University Psychology Department, but I am always seeking new opportunities to apply my craft.</p>
+
+                <!--social links-->
+                <div class="visible-lg-* hidden-md hidden-sm hidden-xs" id="contacts">
+                    <a href="https://github.com/jkim2019" target="_blank" class="hvr-grow">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-kim-04219b129" target="_blank" class="hvr-grow">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="mailto:john.j.kim@vanderbilt.edu" class="hvr-grow">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden-lg" id="contacts">
+                    <a href="https://github.com/jkim2019" target="_blank" class="hvr-grow">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-kim-04219b129" target="_blank" class="hvr-grow">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="mailto:john.j.kim@vanderbilt.edu" class="hvr-grow">
+                        <span class="fa-stack fa-3x">
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+</body>
