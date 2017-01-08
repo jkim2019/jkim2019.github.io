@@ -8,7 +8,7 @@ body {
     font-size: 5em;
     display: inline;
 }
-#temp {
+#intro-resume {
     text-align: center;
     margin-bottom: 8%;
 }
@@ -40,11 +40,11 @@ body {
 #about-page {
     background: rgba(255, 255, 255);
 }
-#intro {
+#intro h1 {
     color: white;
     margin-top: 25%;
     font-size: 7em;
-    margin-bottom: 7%;
+    margin-bottom: 13%;
 }
 #arrow {
     height: 200px;
@@ -139,7 +139,7 @@ body {
 /*Responsive Design*/
 @media (max-width: 480px) {
     #intro {
-        margin-bottom: 4%;
+        margin-bottom: 12%;
         margin-top: 5%;
     }
     #profile-picture {
@@ -165,15 +165,22 @@ body {
     }
     #resume-link {
         font-size: 1.5em;
+        padding: 3%;
     }
-    #temp {
+    #intro-resume {
         margin-bottom: 4%;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
         margin-bottom: 5%;
-        margin-top: 5%;
+    }
+    #intro h1 {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #intro-resume {
+        margin-bottom: 0;
     }
     #profile-picture {
         height: 300px;
@@ -199,7 +206,8 @@ body {
     #resume-link {
         font-size: 1.5em;
     }
-    #temp {
-        margin-bottom: 4%;
+    #arrow {
+        height: 100px;
+        width: 150px;
     }
 }
