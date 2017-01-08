@@ -150,7 +150,7 @@ body {
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         margin-top: 5%;
     }
     #profile-picture {
