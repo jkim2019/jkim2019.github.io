@@ -129,6 +129,10 @@ body {
         height: 200px;
         width: 200px;
     }
+    .element {
+        font-size: 2em;
+        display: inline;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
@@ -137,5 +141,9 @@ body {
     #profile-picture {
         height: 300px;
         width: 300px;
+    }
+    .element {
+        font-size: 3em;
+        display: inline;
     }
 }
