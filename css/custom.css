@@ -139,7 +139,7 @@ body {
 /*Responsive Design*/
 @media (max-width: 480px) {
     #intro {
-        margin-bottom: 0;
+        margin-bottom: 4%;
         margin-top: 5%;
     }
     #profile-picture {
@@ -166,10 +166,13 @@ body {
     #resume-link {
         font-size: 1.5em;
     }
+    #temp {
+        margin-bottom: 4%;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
-        margin-bottom: 20%;
+        margin-bottom: 5%;
         margin-top: 5%;
     }
     #profile-picture {
@@ -195,5 +198,8 @@ body {
     }
     #resume-link {
         font-size: 1.5em;
+    }
+    #temp {
+        margin-bottom: 15%;
     }
 }
