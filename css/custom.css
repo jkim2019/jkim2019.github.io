@@ -8,6 +8,22 @@ body {
     font-size: 5em;
     display: inline;
 }
+#temp {
+    text-align: center;
+    margin-bottom: 8%;
+}
+#resume-link {
+    text-decoration: none;
+    font-size: 2em;
+    border: 1px solid white;
+    padding: 1.5% 1.75% 1.5% 1.75%;
+    color: white;
+}
+#resume-link:hover {
+    border: 1px solid black;
+    color: black;
+    background: white;
+}
 #about-header {
     margin: 3% 0 0 0;
 }
@@ -28,10 +44,10 @@ body {
     color: white;
     margin-top: 25%;
     font-size: 7em;
-    margin-bottom: 15%;
+    margin-bottom: 7%;
 }
 #arrow {
-    height: 200px;
+    height: 175px;
     width: 300px;
     display: block;
     margin: 0 auto;
@@ -147,6 +163,9 @@ body {
     #about-header {
         margin: 0 auto;
     }
+    #resume-link {
+        font-size: 1.5em;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
@@ -173,5 +192,8 @@ body {
     }
     #about-header {
         margin: 0 auto;
+    }
+    #resume-link {
+        font-size: 1.5em;
     }
 }
