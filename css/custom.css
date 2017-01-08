@@ -135,6 +135,10 @@ body {
     .typed-cursor{
         font-size: 3em;
     }
+    #about-me {
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #intro {
@@ -149,5 +153,9 @@ body {
     }
     .typed-cursor{
         font-size: 4em;
+    }
+    #about-me {
+        font-size: 1.5em;
+        text-align: center;
     }
 }
