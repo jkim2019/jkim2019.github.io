@@ -25,7 +25,7 @@
     <!--Typed JS-->
     <script src="js/typed.js"></script>
 
-    <!--Typed JS Script-->
+    <!--TypedJS Script-->
     <script>
         $(function(){
             $(".element").typed({
@@ -34,6 +34,16 @@
                 backDelay: 1000,
                 startDelay: 1000,
                 loop: true
+            });
+        });
+    </script>
+    <!--Introduction TypedJS Script-->
+    <script>
+        $(function(){
+            $(".introduction").typed({
+                strings: ["Hi. ^1000 I'm John."],
+                typeSpeed: 50,
+                startDelay: 1000
             });
         });
     </script>
@@ -63,14 +73,15 @@
             } // End if
         });
         });
-</script>
+    </script>
 </head>
 
 <body>
     <div class="page-section" id="front-page">
         <div class="container" id='intro-resume'>
             <div class="row" id="intro">
-                <h1 class="text-center fade">Hi, I'm John.</h1>
+                <!--<h1 class="text-center fade">Hi, I'm John.</h1>-->
+                <div class="introduction"></div>
             </div>
             <a href="images/jkresume.pdf" target="_blank" id="resume-link" class="fade">Resume</a>
         </div>

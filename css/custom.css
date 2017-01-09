@@ -40,10 +40,13 @@ body {
 #about-page {
     background: rgba(255, 255, 255);
 }
-#intro h1 {
-    color: white;
-    margin-top: 25%;
+.introduction {
     font-size: 7em;
+    color: white;
+    display: inline;
+}
+#intro {
+    margin-top: 25%;
     margin-bottom: 7%;
 }
 .bounce {
@@ -61,13 +64,11 @@ body {
     40% {-webkit-transform: translateY(-30px);}
     60% {-webkit-transform: translateY(-15px);}
 }
- 
 @-moz-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
     40% {-moz-transform: translateY(-30px);}
     60% {-moz-transform: translateY(-15px);}
 }
- 
 @-o-keyframes bounce {
     0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
     40% {-o-transform: translateY(-30px);}
@@ -110,43 +111,39 @@ body {
 }
 /*fade in*/
 .fade {
-    -webkit-animation: fadein 1s ease-in 1s forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s ease-in 1s forwards; /* Firefox < 16 */
-        -ms-animation: fadein 1s ease-in 1s forwards; /* Internet Explorer */
-         -o-animation: fadein 1s ease-in 1s forwards; /* Opera < 12.1 */
-            animation: fadein 1s ease-in 1s forwards;
+    -webkit-animation: fadein 1s ease-in 4s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s ease-in 4s forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1s ease-in 4s forwards; /* Internet Explorer */
+         -o-animation: fadein 1s ease-in 4s forwards; /* Opera < 12.1 */
+            animation: fadein 1s ease-in 4s forwards;
 }
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Internet Explorer */
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
 /* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 /*typed.js*/
-.typed-cursor{
-    font-size: 5em;
+.typed-cursor {
+    font-size: 7em;
     color: gray;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
