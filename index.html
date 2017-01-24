@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <title>John Kim</title>
     <meta charset="utf-8">
@@ -27,7 +28,7 @@
 
     <!--TypedJS Script-->
     <script>
-        $(function(){
+        $(function() {
             $(".element").typed({
                 strings: ["Programmer.", "Student.", "Developer."],
                 typeSpeed: 50,
@@ -39,7 +40,7 @@
     </script>
     <!--Introduction TypedJS Script-->
     <script>
-        $(function(){
+        $(function() {
             $(".introduction").typed({
                 strings: ["Hi. ^1000 I'm John."],
                 typeSpeed: 50,
@@ -49,29 +50,29 @@
     </script>
     <!--Smooth Scrolling for Anchor Links-->
     <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-            // Store hash
-            var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
-            } // End if
-        });
         });
     </script>
 </head>
@@ -86,7 +87,7 @@
             <a href="images/jkresume.pdf" target="_blank" id="resume-link" class="fade">Resume</a>
         </div>
         <div class="container">
-                <a href=#about-page><img src="images/arrow1.png" alt="arrow" class="animated bounce" id="arrow"></a>
+            <a href=#about-page><img src="images/arrow1.png" alt="arrow" class="animated bounce" id="arrow"></a>
         </div>
     </div>
 
@@ -107,7 +108,8 @@
 
             <!--about me-->
             <div class="col-xs-12 col-lg-6 col-lg-offset-2" id="about-me-section">
-                <p id="about-me">My name is John Kim, and I am a second-year at Vanderbilt University, where I am studying Computer Science and Mathematics. I began learning Java four years ago, and I have continued to acquire and hone new skills in the field ever since. Currently, I am researching learning models for human cognition under the Vanderbilt University Psychology Department, but I am always seeking new opportunities to apply my craft.</p>
+                <p id="about-me">My name is John Kim, and I am a second-year student at Vanderbilt University, where I am studying Computer Science and Mathematics. I began learning Java four years ago, and I have continued to acquire and hone new skills in the field
+                    ever since. Currently, I am researching learning models for human cognition under the Vanderbilt University Psychology Department, but I am always seeking new opportunities to apply my craft.</p>
 
                 <!--social links-->
                 <div class="visible-lg-* hidden-md hidden-sm hidden-xs" id="contacts">
@@ -156,5 +158,5 @@
 
 
 
-    
+
 </body>
