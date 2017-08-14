@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size 3em;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: 1rem;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+.content {
+    font-family: 'Open Sans', 'light', 'Times New Roman', sans-serif;
+    width: 70%;
+    
+    margin: 0 auto;
+    float: center;
+    
+    padding: 3% 5% 0 5%;
+    
+    box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.6), -12px 0 8px -4px rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.section {
+    margin-top: 5%;
+}
+
+.section:last-of-type {
+    padding-bottom: 10%;
+}
+
+.card-group:first-of-type {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.card-block {
+    padding-bottom: 0;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    font-size: 1.2em;
+    
+}
+
+.card {
+    border: 0px;
+}
+
+.card i {
+    margin: 0 auto;
+    float: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.frame-group {
+    margin-top: 4%;
+}
+
+.row {
+    margin-top: 4%;
+}
+
+.row img:first-of-type {
+    margin-left: 8%;
+}
+
+.row img:nth-of-type(2) {
+    margin-right: 8%;
+    margin-left: 4%;
+}
+
+.data-img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    width: 40%;
+    height: 40%;
+}

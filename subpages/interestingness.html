@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interestingness</title>
+
+    <!--Open Sans-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../resources/css/comp_sci.css">
+</head>
+
+<!--    TODO - add methodology section that explains algorithm in depth-->
+
+<body>
+    <div class="container content">
+        <h1>Interestingness</h1>
+        <div class="description">
+            <h2>A quantification of interestingness, using an original implementation of "Automatic Prediction of Text Aesthetics and Interestingness", Ganguly et al.</h2>
+        </div>
+        <div class="section" id="overview">
+            <h3>Overview</h3>
+            <p>Implemented in Python. Considers:</p>
+            <ul>
+                <li>topic diversity</li>
+                <li>sentiment polarity</li>
+                <li>word repetition</li>
+                <li>word length</li>
+                <li>presence of adjectives and adverbs</li>
+            </ul>
+            <h3>Resources</h3>
+            <ul>
+                <li>GloVe - word-vector representations</li>
+                <li>SentiWordNet - sentiment analysis</li>
+                <li>Gensim - latent dirichlet allocation for topic modeling</li>
+                <li>NLTK - text pre-processing, POS tagging</li>
+                <li>MatPlotLib - data visualization</li>
+            </ul>
+        </div>
+        <div class="section" id="control-flow">
+            <h3>Control Flow</h3>
+            <div class="card-group" id="first-group">
+                <div class="card col-lg-4">
+                    <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h4 class="card-title">Input a set of interesting and factual articles</h4>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <i class="fa fa-calculator fa-3x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h4 class="card-title">Calculate scores for each subcategory, e.g. topic diversity</h4>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <i class="fa fa-sort-numeric-asc fa-3x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h4 class="card-title">Normalize each score</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card col-lg-4">
+                    <i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h4 class="card-title">Calculate weights for each subcategory by its ability to separate interesting and factual articles</h4>
+                    </div>
+                </div>
+                <div class="card col-lg-4">
+                    <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
+                    <div class="card-block">
+                        <h4 class="card-title">Perform weighted sum to determine interestingness score</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="data-visualization">
+            <h3>Data Visualization</h3>
+            <div class="frame-group">
+                <div class="row">
+                    <img src="../resources/img/interestingness/topic%20diversity.png" class="img-fluid data-img" alt="topic diversity">
+                    <img src="../resources/img/interestingness/sentiment.png" class="img-fluid data-img" alt="sentiment polarity">
+                </div>
+                <div class="row">
+                    <img src="../resources/img/interestingness/word%20repetition.png" class="img-fluid data-img" alt="word repetition">
+                    <img src="../resources/img/interestingness/word%20length.png" class="img-fluid data-img" alt="word length">
+                </div>
+                <div class="row">
+                    <img src="../resources/img/interestingness/adjective%20adverb.png" class="img-fluid data-img" alt="adjective adverb">
+                    <img src="../resources/img/interestingness/interestingness.png" class="img-fluid data-img" alt="interestingness">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="future-work">
+            <h3>Future Work</h3>
+            <h4>General</h4>
+            <ul>
+                <li>Compare decaying weight formula given in "Automatic Prediction of Text Aesthetics and Interestingness" to alternatives.</li>
+                <li>Obtain larger corpus of "interesting" and "factual" articles for more thorough analysis.</li>
+                <li>Determine ideal weights when performing weighted sum of each sub-category to calculate an interestingness score.</li>
+            </ul>
+            <h4>Topic Diversity</h4>
+            <ul>
+                <li>Determine optimal sub-document size when discretizing document into chunks.</li>
+                <li>Determine optimal topic number and size when performing LDA.</li>
+            </ul>
+            <h4>Sentiment Polarity</h4>
+            <ul>
+                <li>Determine optimal sub-document size when discretizing document into chunks.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

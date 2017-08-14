@@ -1,162 +1,116 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <title>John Kim</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
 
-    <!--Stylesheets-->
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--Bootstrap Social CSS-->
-    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <!--Bootstrap-->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Hover-->
-    <link rel="stylesheet" href="css/hover-min.css">
-    <!--Custom CSS-->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!--Scripts-->
+    <link rel="stylesheet" href="resources/css/hover-min.css">
+    <!--Local CSS-->
+    <link rel="stylesheet" href="resources/css/styles.css">
+    
     <!--JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--Bootstrap JS-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Typed JS-->
-    <script src="js/typed.js"></script>
+    <script src="resources/js/typed.js"></script>
 
-    <!--TypedJS Script-->
-    <script>
-        $(function() {
-            $(".element").typed({
-                strings: ["Programmer.", "Student.", "Developer."],
-                typeSpeed: 50,
-                backDelay: 1000,
-                startDelay: 1000,
-                loop: true
-            });
-        });
-    </script>
-    <!--Introduction TypedJS Script-->
-    <script>
-        $(function() {
-            $(".introduction").typed({
-                strings: ["Hi. ^1000 I'm John."],
-                typeSpeed: 50,
-                startDelay: 1000
-            });
-        });
-    </script>
-    <!--Smooth Scrolling for Anchor Links-->
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
 </head>
 
 <body>
-    <div class="page-section" id="front-page">
-        <div class="container" id='intro-resume'>
-            <div class="row" id="intro">
-                <!--<h1 class="text-center fade">Hi, I'm John.</h1>-->
-                <div class="introduction"></div>
+    <!--overlay-->
+    <div id="overlay">
+        <!--contents populated in JS-->
+        <div class="intro-resume">
+            <div id="overlay_intro"></div>
+            <div class="links">
+                <a href="resources/docs/John%20Kim%20CS%20Resume.pdf" id="resume-link" class="link-box fade" target="_blank">Resume</a>
+                <a id="portfolio-link" class="link-box fade">Portfolio</a>
             </div>
-            <a href="images/jkresume.pdf" target="_blank" id="resume-link" class="fade">Resume</a>
+        </div> 
+    </div>
+    
+    <!--header-->
+    <div class="header">
+        <div class="name">
+            <h1>My Portfolio</h1>
         </div>
-        <div class="container">
-            <a href=#about-page><img src="images/arrow1.png" alt="arrow" class="animated bounce" id="arrow"></a>
+        <div class="resume-contact">
+            <!--resume, email, social logos-->
+            <a href="resources/docs/John%20Kim%20CS%20Resume.pdf" target="_blank" class="hvr-grow">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:john.kim@jmrkconsulting.com" class="hvr-grow">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/john-kim-04219b129" target="_blank" class="hvr-grow">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/jkim2019" target="_blank" class="hvr-grow">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
-
-    <div class="page-section" id="about-page">
-        <div class="container-fluid">
-            <!--typing-->
-            <div class="row">
-                <div class="col-xs-12" id="about-header">
-                    <div class="element" id="typing"></div>
-                </div>
-            </div>
+    
+    <!--main section-->
+    <div class="section" id="programming">
+        <!--Projects-->
+        <div class="box" id="concept_search">
+            <a href="subpages/concept_search.html" class="hvr-grow">
+                <h3>Concept Search</h3>
+            </a>
+        </div
+        ><div class="box" id="interestingness">
+            <a href="subpages/interestingness.html" class="hvr-grow">
+                <h3>Interestingness</h3>
+            </a>
+        </div
+        ><div class="box" id="jmrk_consulting">
+            <a href="subpages/jmrk_consulting.html" class="hvr-grow">
+                <h3>JMRK Consulting</h3>
+            </a>
         </div>
-        <div class="container">
-            <!--profile picture-->
-            <div class="col-xs-12 col-lg-4" id="profile-pic-section">
-                <img src="images/me.jpg" alt="profile-picture" id="profile-picture" class="img-rounded">
-            </div>
 
-            <!--about me-->
-            <div class="col-xs-12 col-lg-6 col-lg-offset-2" id="about-me-section">
-                <p id="about-me">My name is John Kim, and I am a second-year student at Vanderbilt University, where I am studying Computer Science and Mathematics. I began learning Java four years ago, and I have continued to acquire and hone new skills in the field
-                    ever since. Currently, I am researching applications of artificial intelligence to cultural and environmental sustainability, but I am always seeking new opportunities to apply my craft.</p>
+        <div class="box" id="lisbon">
+            <a href="subpages/lisbon.html" class="hvr-grow">
+                <h3>Lisbon, Portugal</h3>
+            </a>
+        </div
+        ><div class="box" id="kpmg">
+            <a href="subpages/kpmg.html" class="hvr-grow">
+                <h3>KPMG International Case Competition</h3>
+            </a>
+        </div
+        ><div class="box" id="titanic">
+            <a href="subpages/titanic.html" class="hvr-grow">
+                <h3>Titanic</h3>
+            </a>
+        </div>
 
-                <!--social links-->
-                <div class="visible-lg-* hidden-md hidden-sm hidden-xs" id="contacts">
-                    <a href="https://github.com/jkim2019" target="_blank" class="hvr-grow">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/john-kim-04219b129" target="_blank" class="hvr-grow">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="mailto:john.j.kim@vanderbilt.edu" class="hvr-grow">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </div>
-                <div class="hidden-lg" id="contacts">
-                    <a href="https://github.com/jkim2019" target="_blank" class="hvr-grow">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/john-kim-04219b129" target="_blank" class="hvr-grow">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="mailto:john.j.kim@vanderbilt.edu" class="hvr-grow">
-                        <span class="fa-stack fa-3x">
-                            <i class="fa fa-square-o fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
+        <div class="box" id="digit_recognizer">
+            <a href="subpages/digit_recognizer.html" class="hvr-grow">
+                <h3>Digit Recognizer</h3>
+            </a>
+        </div
+        ><div class="box" id="kmeans">
+            <a href="subpages/kmeans.html" class="hvr-grow">
+                <h3>K-Means Clustering</h3>
+            </a>
+        </div
+        ><div class="box" id="neural_nets">
+            <a href="subpages/neural_networks.html" class="hvr-grow">
+                <h3>Neural Networks</h3>
+            </a>
         </div>
     </div>
-
-
-
-
+    
+    <!--javascript-->
+    <script src="resources/js/index.js"></script>
 </body>
+
+</html>
