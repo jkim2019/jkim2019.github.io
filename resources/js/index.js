@@ -44,4 +44,16 @@ $(document).ready(function () {
     $('#portfolio-link').on('click', function() {
         $('#overlay').fadeOut(500);
     });
+    
+    // adjust first box size to get rid of filler
+    var num_boxes = $('.box').length;
+    var box_width = parseFloat($('.box').first().css('width')) / parseFloat($('.section').first().css('width'));
+    var rows_per_box = Math.round(1/box_width);
+    if (num_boxes % rows_per_box != 0) {
+        var extra_boxes = num_boxes % rows_per_box;
+        
+        // get new width in percentage
+        var new_width = 100 * (1 + extra_boxes) * box_width;
+        $('.box').first().css('width', new_width.toString()+"%");
+    }
 });

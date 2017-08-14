@@ -229,6 +229,9 @@ a {
     h3 {
         font-size: 1em;
     }
+    .box {
+        width: 50%;
+    }
     .links {
         padding-top: 12%;
     }
