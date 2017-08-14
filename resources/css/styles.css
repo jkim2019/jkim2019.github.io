@@ -16,9 +16,6 @@ h2 {
 }
 h3 {
     font-weight: normal;
-    padding: 0 20px 0 20px;
-    margin: 0;
-    color: white;
     font-size: 2em;
 }
 a {
@@ -180,7 +177,11 @@ a {
 .box h3 {
     position: relative;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+    word-wrap: break-word;
+    padding: 0 20px 0 20px;
+    margin: 0;
+    color: white;
 }
 
 
@@ -227,7 +228,6 @@ a {
     }
     h3 {
         font-size: 1em;
-        word-wrap: break-word;
     }
     .links {
         padding-top: 12%;
