@@ -43,6 +43,7 @@ $(document).ready(function () {
     // fade out overlay on portflio click
     $('#portfolio-link').on('click', function() {
         $('#overlay').fadeOut(500);
+        $('.box_title').fadeIn(500);
     });
     
     // adjust first box size to get rid of filler
