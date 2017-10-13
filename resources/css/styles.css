@@ -187,6 +187,9 @@ a {
 
 
 /*box background images*/
+#image_processing {
+    background-image: url(../img/image_processing.jpg)
+}
 #concept_search {
     background-image: url(../img/concept_search.jpg);
 }

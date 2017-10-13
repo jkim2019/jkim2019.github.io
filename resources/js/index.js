@@ -54,7 +54,14 @@ $(document).ready(function () {
         var extra_boxes = num_boxes % rows_per_box;
         
         // get new width in percentage
-        var new_width = 100 * (1 + extra_boxes) * box_width;
-        $('.box').first().css('width', new_width.toString()+"%");
+        var section_width = parseFloat($('.section').first().css('width'));
+        var new_width = 100 / extra_boxes;
+        
+        // set extra boxes to new width, starting with first box
+        for(var i=0; i<extra_boxes; ++i) {
+            $('.box:nth-child(' + i+1 + ')').css('width', new_width.toString() + '%');
+        }
+        
+//        $('.box').first().css('width', new_width.toString()+"%");
     }
 });

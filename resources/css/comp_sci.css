@@ -89,23 +89,27 @@ ul {
     text-align: center;
 }
 
+/*generic images*/
 .frame-group {
-    margin-top: 4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
+/*a row expects two images*/
 .row {
     margin-top: 4%;
 }
 
-.row img:first-of-type {
+.row > img:first-of-type {
     margin-left: 8%;
 }
 
-.row img:nth-of-type(2) {
+.row > img:nth-of-type(2) {
     margin-right: 8%;
     margin-left: 4%;
 }
 
+/*images w/ no captions*/
 .data-img {
     border-style: solid;
     border-width: 5px;
@@ -113,6 +117,29 @@ ul {
     width: 40%;
     height: 40%;
 }
+
+/*images w/ captions*/
+.figure {
+    display: inline-block;
+    width: 40%;
+    margin: 0 0 0 5%;
+    padding: 0;
+}
+.figure > img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+.figure-caption {
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 500px) {
     h1 {

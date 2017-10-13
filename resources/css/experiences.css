@@ -114,6 +114,10 @@ ul {
     height: 40%;
 }
 
+.client {
+    text-align: left;
+}
+
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 3em;
