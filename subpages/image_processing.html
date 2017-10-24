@@ -25,13 +25,49 @@
             <h3>Table of Contents</h3>
             <ul>
                 <!-- TODO: add Fourier Transform -->
-                <li><a href="#hist_eq">Color Correction using HSV Representations</a></li>
+                <li><a href="#g_sharp">Unsharp Masking Using Gaussian Blurs</a></li>
+                <li><a href="#hist_eq">Linear Color Correction using HSV Representations</a></li>
                 <li><a href="#img_superpos_arith">Image Superimposition w/ Arithmetic Operations</a></li>
                 <li><a href="#8bitcmap">8-bit Color Maps</a></li>
                 <li><a href="#matlab_img_comp">MATLAB JPEG Image Compression</a></li>
             </ul>
         </div>
         <!-- TODO: add a floating button that scrolls back to ToC -->
+        <div class="section" id="g_sharp">
+            <h3>Unsharp Masking Using Gaussian Blurs</h3>
+            <div class="frame-group">
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/bee_cropped.jpg" class="img-fluid figure-img" alt="bee">
+                        <figcaption class="figure-caption">original image<br>image obtained from <a href="https://pixabay.com/en/animals-flowers-bug-nature-flower-2671825/" target="_blank">here</a></figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/gaussian.jpg" class="img-fluid figure-img" alt="AHS color corrected">
+                        <figcaption class="figure-caption">2-D Symmetric Gaussian with &sigma;=16</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/USM_G16_A05.jpg" class="img-fluid figure-img" alt="bee">
+                        <figcaption class="figure-caption">Unsharp Masking (USM), &sigma;=16, scale factor &alpha;=0.5</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/USM_G16_A2.jpg" class="img-fluid figure-img" alt="bee">
+                        <figcaption class="figure-caption">USM, &sigma;=16, scale factor &alpha;=2</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/USM_G2_A05.jpg" class="img-fluid figure-img" alt="bee">
+                        <figcaption class="figure-caption">USM, &sigma;=2, scale factor &alpha;=0.5</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/gaussian_sharpening/USM_G2_A2.jpg" class="img-fluid figure-img" alt="bee">
+                        <figcaption class="figure-caption">USM, &sigma;=2, scale factor &alpha;=2</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
         <div class="section" id="hist_eq">
             <h3>Linear Color Correction Using HSV Representations</h3>
             <div class="frame-group">
@@ -53,11 +89,11 @@
                 <div class="row">
                     <figure class="figure">
                         <img src="../resources/img/image_processing/img_superposition_arith/colorful%20leopard.jpg" class="img-fluid figure-img" alt="leopard.jpg">
-                        <figcaption class="figure-caption">leopard.jpg<br>photo obtained from <a href="http://img06.deviantart.net/6972/i/2013/198/5/1/colorful_leopard_viii_by_megaossa-d5v62kb.jpg" target="_blank">here</a></figcaption>
+                        <figcaption class="figure-caption">leopard.jpg<br>image obtained from <a href="http://img06.deviantart.net/6972/i/2013/198/5/1/colorful_leopard_viii_by_megaossa-d5v62kb.jpg" target="_blank">here</a></figcaption>
                     </figure>
                     <figure class="figure">
                         <img src="../resources/img/image_processing/img_superposition_arith/cwheel.bmp" class="img-fluid figure-img" alt="color wheel">
-                        <figcaption class="figure-caption">cwheel.bmp<br>photo obtained from Professor Alan Peters</figcaption>
+                        <figcaption class="figure-caption">cwheel.bmp<br>image obtained from Professor Alan Peters</figcaption>
                     </figure>
                 </div>
                 <div class="row">
