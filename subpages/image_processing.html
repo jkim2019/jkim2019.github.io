@@ -24,7 +24,7 @@
         <div class="section" id="toc">
             <h3>Table of Contents</h3>
             <ul>
-                <!-- TODO: add Fourier Transform -->
+                <li><a href="#noise_reduction">Noise Reduction Using Convolution</a></li>
                 <li><a href="#g_sharp">Unsharp Masking Using Gaussian Blurs</a></li>
                 <li><a href="#hist_eq">Linear Color Correction using HSV Representations</a></li>
                 <li><a href="#img_superpos_arith">Image Superimposition w/ Arithmetic Operations</a></li>
@@ -33,6 +33,41 @@
             </ul>
         </div>
         <!-- TODO: add a floating button that scrolls back to ToC -->
+        <div class="section" id="noise_reduction">
+            <h3>Noise Reduction Using Convolution</h3>
+            <div class="frame-group">
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/Saoirse%20Ronan%20-%20Ember%20-%20685%20x%201024%20-%20noisy.bmp" class="img-fluid figure-img" alt="Saoirse Ronan">
+                        <figcaption class="figure-caption">original, noisy image<br>image obtained from Professor Alan Peters</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/soirse_region_noisy_2.jpg" class="img-fluid figure-img" alt="Saoirse Ronan eye">
+                        <figcaption class="figure-caption">original, noisy, cropped image</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/soirse_blurred_box.jpg" class="img-fluid figure-img" alt="box blurred image">
+                        <figcaption class="figure-caption">noisy, blurred image using a 3x3 box filter</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/soirse_region_wiener_5x5_2.jpg" class="img-fluid figure-img" alt="box blurred cropped image">
+                        <figcaption class="figure-caption">noisy, blurred, cropped image using a 3x3 box filter</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/soirse_blurred_cross.jpg" class="img-fluid figure-img" alt="cross blurred image">
+                        <figcaption class="figure-caption">noisy, blurred image using a 5x5 cross filter</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="../resources/img/image_processing/noise_reduction/soirse_region_cross_2.jpg" class="img-fluid figure-img" alt="cross blurred cropped image">
+                        <figcaption class="figure-caption">noisy, blurred, cropped image using a 5x5 cross filter</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
         <div class="section" id="g_sharp">
             <h3>Unsharp Masking Using Gaussian Blurs</h3>
             <div class="frame-group">
