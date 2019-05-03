@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(window).scrollTop(targetOffset.top);
 
     // load overlay
-    $('#overlay').css('display', 'block');
+//    $('#overlay').css('display', 'block');
 
     // typed introduction
     $(function () {
@@ -42,7 +42,7 @@ $(document).ready(function () {
     
     // fade out overlay on portflio click
     $('#portfolio-link').on('click', function() {
-        $('#overlay').fadeOut(500);
+        $('#intro-page').fadeOut(500);
         $('.box_title').fadeIn(500);
     });
     

@@ -23,16 +23,24 @@
 </head>
 
 <body>
-    <!--overlay-->
-    <div id="overlay">
-        <!--contents populated in JS-->
-        <div class="intro-resume">
-            <div id="overlay_intro"></div>
-            <div class="links">
-                <a href="resources/docs/John%20Kim%20Resume.pdf" id="resume-link" class="link-box fade" target="_blank">Resume</a>
-                <a id="portfolio-link" class="link-box fade">Portfolio</a>
-            </div>
-        </div> 
+    <!--intro page-->
+    <div class="page" id="intro-page">
+        <!-- background video -->
+        <video autoplay muted loop id="live_background">
+            <source src="resources/video/live_background_cropped.mp4" type="video/mp4">
+        </video>
+
+        <!--overlay-->
+        <div id="overlay">
+            <!--contents populated in JS-->
+            <div class="intro-resume">
+                <div id="overlay_intro"></div>
+                <div class="links">
+                    <a href="resources/docs/John%20Kim%20Resume.pdf" id="resume-link" class="link-box fade" target="_blank">Resume</a>
+                    <a id="portfolio-link" class="link-box fade">Portfolio</a>
+                </div>
+            </div> 
+        </div>
     </div>
     
     <!--header-->
@@ -41,7 +49,7 @@
             <h1>My Portfolio</h1>
         </div>
         <div class="resume-contact">
-            <!--resume, email, social logos-->
+<!--            resume, email, social logos-->
             <a href="resources/docs/John%20Kim%20Resume.pdf" target="_blank" class="hvr-grow">
                 <i class="fa fa-file-text-o" aria-hidden="true"></i>
             </a>
@@ -96,7 +104,6 @@
                 <h3 class="box_title">Titanic</h3>
             </a>
         </div
-
         ><div class="box" id="digit_recognizer">
             <a href="subpages/digit_recognizer.html" target="_blank" class="hvr-grow">
                 <h3 class="box_title">Digit Recognizer</h3>
@@ -106,12 +113,14 @@
             <a href="subpages/kmeans.html" target="_blank" class="hvr-grow">
                 <h3 class="box_title">K-Means Clustering</h3>
             </a>
-        </div
-        ><div class="box" id="neural_nets">
+        </div>
+<!--
+        <div class="box" id="neural_nets">
             <a href="subpages/neural_networks.html" target="_blank" class="hvr-grow">
                 <h3 class="box_title">Neural Networks</h3>
             </a>
         </div>
+-->
     </div>
     
     <!--javascript-->
